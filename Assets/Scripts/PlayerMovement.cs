@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5;
@@ -56,7 +57,6 @@ public class PlayerMovement : MonoBehaviour
         var tempVector = new Vector2(animator.GetFloat("horizontalDirection"), animator.GetFloat("verticalDirection"));
         if (tempVector != moveDirection)
         {
-            Debug.Log("position not the same");
             animator.SetFloat("horizontalDirection", moveDirection.x);
             animator.SetFloat("verticalDirection", moveDirection.y);
         }
