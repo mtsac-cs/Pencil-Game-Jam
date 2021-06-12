@@ -3,51 +3,56 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(Animator), typeof(PlayerBodyPhase))]
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5;
+    [NonSerialized]
+    public PlayerBodyPhase body;
+
+    public float moveSpeed = 5;    
 
     Animator animator;
     Vector2 moveDirection;
-    bool isMoving = false;
+    bool isMoving;
+
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        body = GetComponent<PlayerBodyPhase>();
     }
 
     // Update is called once per frame
     void Update()
     {
         isMoving = false;
+
         if (Input.GetKey(KeyCode.W))
         {
-            gameObject.transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
-            moveDirection = Vector2.up;
-            isMoving = true;
+            Move(Vector2.up);
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            gameObject.transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
-            moveDirection = Vector2.left;
-            isMoving = true;
+            Move(Vector2.left);
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            gameObject.transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
-            moveDirection = Vector2.down;
-            isMoving = true;
+            Move(Vector2.down);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            gameObject.transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-            moveDirection = Vector2.right;
-            isMoving = true;
+            Move(Vector2.right);
         }
 
         UpdateAnimation();
+    }
+
+    void Move(Vector2 direction)
+    {
+        gameObject.transform.Translate(direction * moveSpeed * Time.deltaTime);
+        moveDirection = direction;
+        isMoving = true;
     }
 
     void UpdateAnimation()
@@ -59,6 +64,11 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetFloat("horizontalDirection", moveDirection.x);
             animator.SetFloat("verticalDirection", moveDirection.y);
+        }
+
+        if (animator.GetInteger("Player Body Phase") != body.bodyPhase)
+        {
+            animator.SetInteger("Player Body Phase", body.bodyPhase);
         }
     }
 }
