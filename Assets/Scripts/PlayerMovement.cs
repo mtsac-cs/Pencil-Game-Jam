@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5;    
 
     Animator animator;
-    Vector2 moveDirection;
+    Vector2 moveDirection = Vector2.down;
     bool isMoving;
 
 
@@ -59,12 +59,15 @@ public class PlayerMovement : MonoBehaviour
     {
         animator.SetBool("isMoving", isMoving);
 
-        var tempVector = new Vector2(animator.GetFloat("horizontalDirection"), animator.GetFloat("verticalDirection"));
+        animator.SetFloat("horizontalDirection", moveDirection.x);
+        animator.SetFloat("verticalDirection", moveDirection.y);
+
+        /*var tempVector = new Vector2(animator.GetFloat("horizontalDirection"), animator.GetFloat("verticalDirection"));
         if (tempVector != moveDirection)
         {
             animator.SetFloat("horizontalDirection", moveDirection.x);
             animator.SetFloat("verticalDirection", moveDirection.y);
-        }
+        }*/
 
         if (animator.GetInteger("Player Body Phase") != body.bodyPhase)
         {
