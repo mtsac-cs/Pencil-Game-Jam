@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator), typeof(PlayerBodyPhase))]
+[RequireComponent(typeof(Animator), typeof(BodyType))]
 public class PlayerMovement : MonoBehaviour
 {
     [NonSerialized]
-    public PlayerBodyPhase body;
+    public BodyType body;
 
     public float moveSpeed = 5;    
 
@@ -15,15 +15,12 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveDirection = Vector2.down;
     bool isMoving;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        body = GetComponent<PlayerBodyPhase>();
+        body = GetComponent<BodyType>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         isMoving = false;
@@ -62,16 +59,9 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("horizontalDirection", moveDirection.x);
         animator.SetFloat("verticalDirection", moveDirection.y);
 
-        /*var tempVector = new Vector2(animator.GetFloat("horizontalDirection"), animator.GetFloat("verticalDirection"));
-        if (tempVector != moveDirection)
+        if (animator.GetInteger("BodyType ID") != body.bodyId)
         {
-            animator.SetFloat("horizontalDirection", moveDirection.x);
-            animator.SetFloat("verticalDirection", moveDirection.y);
-        }*/
-
-        if (animator.GetInteger("Player Body Phase") != body.bodyPhase)
-        {
-            animator.SetInteger("Player Body Phase", body.bodyPhase);
+            animator.SetInteger("BodyType ID", body.bodyId);
         }
     }
 }

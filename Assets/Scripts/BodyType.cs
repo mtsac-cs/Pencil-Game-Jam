@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBodyPhase : MonoBehaviour
+public class BodyType : MonoBehaviour
 {
-    public int bodyPhase = 0;
+    public int bodyId = 0;
     
     void Start()
     {
