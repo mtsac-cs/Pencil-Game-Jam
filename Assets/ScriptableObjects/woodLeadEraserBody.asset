@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: woodLeadEraserBody
   m_EditorClassIdentifier: 
   bodyTypeID: 3
+  hasEraser: 1
+  hasLead: 1

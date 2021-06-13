@@ -1,22 +1,25 @@
+using System;
 using UnityEngine;
 
 public class PencilModel : MonoBehaviour
 {
     public PencilState CurrentState { get; private set; }
-    public PencilState bodyInfo;
     public PencilState[] bodyTypes;
+    public PencilState bodyInfo;
 
     Animator animator; 
 
     void Start()
     {
-        animator = GetComponent<Animator>();
-        gameObject.AddComponent<ItemDropObserver>();
-
         if (bodyInfo == null)
         {
-            Debug.LogError("BodyInfo in player is null please drag in a base body type from Scriptable Objects");
+            throw new Exception(nameof(bodyInfo) + " in player is null please drag in a base body type from Scriptable Objects");
         }
+
+        animator = GetComponent<Animator>();
+        gameObject.AddComponent<ItemDropObserver>();
+        gameObject.AddComponent<PencilLeadStat>();
+        gameObject.AddComponent<PencilEraserStat>();
     }
 
     public void UpdatePart(int id)

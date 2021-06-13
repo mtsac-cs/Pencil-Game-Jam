@@ -17,7 +17,7 @@ public class PencilDrop : ItemDrop
         }
         else
         {
-            Debug.Log("The ID in Player does not match any known PencilPartInfo or vice versa");
+            Debug.Log("The ID in Player does not match any known " + nameof(PencilState) + " or vice versa");
         }
     }
 }
