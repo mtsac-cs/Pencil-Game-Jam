@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
+    public ScriptableInt levelIndex;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +19,20 @@ public class LoadScene : MonoBehaviour
     }
 
     public void startGame(){
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(levelIndex.value);
     }
 
     public void endGame(){
         Debug.Log("exited game");
         Application.Quit();
+    }
+
+    public void ResetGame(){
+        if(levelIndex==null){
+            Debug.Log("levelIndex in LoadScene is null");
+        }else{
+            levelIndex.value = 1;
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 }
