@@ -76,10 +76,5 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("horizontalDirection", moveDirection.x);
         animator.SetFloat("verticalDirection", moveDirection.y);
-
-        if (animator.GetInteger("BodyType ID") != player.bodyInfo.bodyTypeID)
-        {
-            animator.SetInteger("BodyType ID", player.bodyInfo.bodyTypeID);
-        }
     }
 }
