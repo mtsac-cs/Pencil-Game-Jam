@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: DecorUnwalkable
+    uniqueID: 3369011443
+    locked: 0
+  - name: DecorWalkable
+    uniqueID: 3812256195
+    locked: 0
+  - name: Wall
+    uniqueID: 996472947
+    locked: 0
