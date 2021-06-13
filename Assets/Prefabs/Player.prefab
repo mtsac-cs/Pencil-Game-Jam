@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 6168571795539150106}
   - component: {fileID: 6168571795539150108}
   - component: {fileID: 6168571795539150109}
+  - component: {fileID: 4658521699070422168}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -172,7 +173,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4548dea4105b2674a8f99e078d505491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyInfo: {fileID: 11400000, guid: ea41861dd07ea5d47be17aed3d6fe2da, type: 2}
 --- !u!114 &6168571795539150105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03923d466d5ad64ba22afe8c4ab1228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  rb: {fileID: 6168571795539150109}
   moveSpeed: 2
   jumpVelocity: 3.4
   fallMultiplier: 2.5
@@ -256,3 +256,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4658521699070422168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6168571795539150117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e476c69d943d0f942a18755e79737f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyInfo: {fileID: 11400000, guid: ea41861dd07ea5d47be17aed3d6fe2da, type: 2}
+  bodyTypes:
+  - {fileID: 11400000, guid: ea41861dd07ea5d47be17aed3d6fe2da, type: 2}
+  - {fileID: 11400000, guid: 218904e59fc7a514e8a01fba2796225d, type: 2}
+  - {fileID: 11400000, guid: 3c3eb4d11b08b2143b6f368ec7e63c33, type: 2}
+  - {fileID: 11400000, guid: 69b41a5dda1e8314abe3045044f1544b, type: 2}
