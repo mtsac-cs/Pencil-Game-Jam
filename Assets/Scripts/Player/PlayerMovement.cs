@@ -20,9 +20,6 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded = true;
     bool isDoubleJumping;
 
-
-    Vector2 moveRbDirection;
-
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -34,47 +31,46 @@ public class PlayerMovement : MonoBehaviour
     {
         isMoving = false;
 
-        // if (Input.GetKey(KeyCode.W))
-        // {
-        //     Move(Vector2.up);
-        // }
-        // else if (Input.GetKey(KeyCode.A))
-        // {
-        //     Move(Vector2.left);
-        // }
-        // else if (Input.GetKey(KeyCode.S))
-        // {
-        //     Move(Vector2.down);
-        // }
-        // else if (Input.GetKey(KeyCode.D))
-        // {
-        //     Move(Vector2.right);
-        // }
+        if (Input.GetKey(KeyCode.W))
+        {
+            Move(Vector2.up);
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            Move(Vector2.left);
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            Move(Vector2.down);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            Move(Vector2.right);
+        }
 
         if (Input.GetButtonDown("Jump"))
         {
             if (isGrounded)
             {
                 isGrounded = false;
-                moveRbDirection = Vector2.up * jumpVelocity;
+                rb.velocity = Vector2.up * jumpVelocity;
             }
             else if (!isDoubleJumping && CanDoubleJump(out var eraserStat))
             {
                 eraserStat.UseAbility();
-                moveRbDirection = Vector2.up * jumpVelocity;
+                rb.velocity = Vector2.up * jumpVelocity;
                 isDoubleJumping = true;
             }
         }
-        moveRbDirection = new Vector2(Input.GetAxisRaw("Horizontal")*moveSpeed,moveRbDirection.y);
+
         if (rb.velocity.y < 0)
         {
-            moveRbDirection += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
         else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
         {
-            moveRbDirection += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
-        rb.velocity=moveRbDirection;
         UpdateAnimation();
     }
 
@@ -89,10 +85,8 @@ public class PlayerMovement : MonoBehaviour
     {
         animator.SetBool("isMoving", isMoving);
 
-        // animator.SetFloat("horizontalDirection", moveDirection.x);
-        // animator.SetFloat("verticalDirection", moveDirection.y);
-        animator.SetFloat("horizontalDirection", rb.velocity.x);
-        //animator.SetFloat("verticalDirection", moveDirection.y);
+        animator.SetFloat("horizontalDirection", moveDirection.x);
+        animator.SetFloat("verticalDirection", moveDirection.y);
     }
 
     bool CanDoubleJump(out PencilEraserStat eraserStat)

@@ -9,13 +9,14 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        levelIndex.value++;
     }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.R)){
+            levelIndex.value--;
             RestartLevel();
-        }
+        } 
     }
     public void RestartLevel()
     {
@@ -23,10 +24,11 @@ public class GameManager : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-        levelIndex.value++;
-        if (levelIndex.value >= MaxLevelIndex.value)
+        if (levelIndex.value > MaxLevelIndex.value)
         {
             SceneManager.LoadScene("GameComplete");
+        }else{
+            SceneManager.LoadScene(levelIndex.value);
         }
     }
 }
