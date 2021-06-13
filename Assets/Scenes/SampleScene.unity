@@ -888,6 +888,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6168571795539150104, guid: 019cc8d8bfde209479fd159ef5a4b636, type: 3}
   m_PrefabInstance: {fileID: 6168571796430747640}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &1562751717 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 6168571795539150109, guid: 019cc8d8bfde209479fd159ef5a4b636, type: 3}
+  m_PrefabInstance: {fileID: 6168571796430747640}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1693743144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,9 +1207,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6168571795539150105, guid: 019cc8d8bfde209479fd159ef5a4b636, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 1562751717}
     - target: {fileID: 6168571795539150117, guid: 019cc8d8bfde209479fd159ef5a4b636, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6168571795539150118, guid: 019cc8d8bfde209479fd159ef5a4b636, type: 3}
+      propertyPath: bodyTypes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168571795539150118, guid: 019cc8d8bfde209479fd159ef5a4b636, type: 3}
+      propertyPath: bodyTypes.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: ea41861dd07ea5d47be17aed3d6fe2da, type: 2}
+    - target: {fileID: 6168571795539150118, guid: 019cc8d8bfde209479fd159ef5a4b636, type: 3}
+      propertyPath: bodyTypes.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3c3eb4d11b08b2143b6f368ec7e63c33, type: 2}
+    - target: {fileID: 6168571795539150118, guid: 019cc8d8bfde209479fd159ef5a4b636, type: 3}
+      propertyPath: bodyTypes.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 218904e59fc7a514e8a01fba2796225d, type: 2}
+    - target: {fileID: 6168571795539150118, guid: 019cc8d8bfde209479fd159ef5a4b636, type: 3}
+      propertyPath: bodyTypes.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 69b41a5dda1e8314abe3045044f1544b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 019cc8d8bfde209479fd159ef5a4b636, type: 3}
