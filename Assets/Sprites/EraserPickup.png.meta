@@ -1,0 +1,1656 @@
+fileFormatVersion: 2
+guid: 8a2b64aa141a02544915e1c8d0ff5809
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1165780463841495487
+    second: EraserPickup_0
+  - first:
+      213: 6965961688712461517
+    second: EraserPickup_1
+  - first:
+      213: 5805364598061891364
+    second: EraserPickup_2
+  - first:
+      213: -7901210913304393014
+    second: EraserPickup_3
+  - first:
+      213: -6812870781189620807
+    second: EraserPickup_4
+  - first:
+      213: -4593439914605724579
+    second: EraserPickup_5
+  - first:
+      213: -1192399984041353814
+    second: EraserPickup_6
+  - first:
+      213: -718141453533955820
+    second: EraserPickup_7
+  - first:
+      213: 3561034793237756071
+    second: EraserPickup_8
+  - first:
+      213: -2532142835895800663
+    second: EraserPickup_9
+  - first:
+      213: 7020240930859365221
+    second: EraserPickup_10
+  - first:
+      213: -6026092838530900685
+    second: EraserPickup_11
+  - first:
+      213: 1255098829594047653
+    second: EraserPickup_12
+  - first:
+      213: -188276167071790505
+    second: EraserPickup_13
+  - first:
+      213: -5231476346253795990
+    second: EraserPickup_14
+  - first:
+      213: -5821528846740940120
+    second: EraserPickup_15
+  - first:
+      213: -5952069060684852782
+    second: EraserPickup_16
+  - first:
+      213: 6325520014527358699
+    second: EraserPickup_17
+  - first:
+      213: 1231672417572497484
+    second: EraserPickup_18
+  - first:
+      213: 7032801065024181678
+    second: EraserPickup_19
+  - first:
+      213: 405897752276751324
+    second: EraserPickup_20
+  - first:
+      213: -1950823640209037535
+    second: EraserPickup_21
+  - first:
+      213: -5589577437322051729
+    second: EraserPickup_22
+  - first:
+      213: -6752458537569660248
+    second: EraserPickup_23
+  - first:
+      213: -4587552304812755421
+    second: EraserPickup_24
+  - first:
+      213: 7892435759250885027
+    second: EraserPickup_25
+  - first:
+      213: 807838328815938133
+    second: EraserPickup_26
+  - first:
+      213: -7485237182434091284
+    second: EraserPickup_27
+  - first:
+      213: -7809751999308605094
+    second: EraserPickup_28
+  - first:
+      213: -1157818753167125082
+    second: EraserPickup_29
+  - first:
+      213: 2766698168582398995
+    second: EraserPickup_30
+  - first:
+      213: -3293389261455146530
+    second: EraserPickup_31
+  - first:
+      213: -8707471791880554316
+    second: EraserPickup_32
+  - first:
+      213: -2349418047019369035
+    second: EraserPickup_33
+  - first:
+      213: 3726948214941110194
+    second: EraserPickup_34
+  - first:
+      213: -3007484245204505023
+    second: EraserPickup_35
+  - first:
+      213: -123218947724361764
+    second: EraserPickup_36
+  - first:
+      213: -5155692927143842039
+    second: EraserPickup_37
+  - first:
+      213: -7832547573372301453
+    second: EraserPickup_38
+  - first:
+      213: -1420083110908878832
+    second: EraserPickup_39
+  - first:
+      213: -1793742923203717770
+    second: EraserPickup_40
+  - first:
+      213: -6547200721953342090
+    second: EraserPickup_41
+  - first:
+      213: 6172797937371425734
+    second: EraserPickup_42
+  - first:
+      213: 2100254171558165259
+    second: EraserPickup_43
+  - first:
+      213: -6637418981397793492
+    second: EraserPickup_44
+  - first:
+      213: 2476759825164840093
+    second: EraserPickup_45
+  - first:
+      213: 5162340160058015313
+    second: EraserPickup_46
+  - first:
+      213: -5817433721877393944
+    second: EraserPickup_47
+  - first:
+      213: -2015225971596128468
+    second: EraserPickup_48
+  - first:
+      213: -7562357289632052027
+    second: EraserPickup_49
+  - first:
+      213: 3551723141022011436
+    second: EraserPickup_50
+  - first:
+      213: -8527171787013100280
+    second: EraserPickup_51
+  - first:
+      213: -647755216253357944
+    second: EraserPickup_52
+  - first:
+      213: 8560942738282922871
+    second: EraserPickup_53
+  - first:
+      213: 5824086367482176801
+    second: EraserPickup_54
+  - first:
+      213: -767181856440080935
+    second: EraserPickup_55
+  - first:
+      213: -3956576194397245877
+    second: EraserPickup_56
+  - first:
+      213: 4973985202408767218
+    second: EraserPickup_57
+  - first:
+      213: -1559179043694775450
+    second: EraserPickup_58
+  - first:
+      213: 8648715685207181326
+    second: EraserPickup_59
+  - first:
+      213: 5187470118496749263
+    second: EraserPickup_60
+  - first:
+      213: 3478097016375683076
+    second: EraserPickup_61
+  - first:
+      213: 6945078008881830413
+    second: EraserPickup_62
+  - first:
+      213: -7689186811920663882
+    second: EraserPickup_63
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EraserPickup_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 26
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14633ae38d052dfe0800000000000000
+      internalID: -1165780463841495487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 25
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dccbfa6af311ca060800000000000000
+      internalID: 6965961688712461517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_2
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 25
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f7b13085cc09050800000000000000
+      internalID: 5805364598061891364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 25
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca4d096982495290800000000000000
+      internalID: -7901210913304393014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_4
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 25
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bbfd82ee12d371a0800000000000000
+      internalID: -6812870781189620807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_5
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 25
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c33d81cb2d040c0800000000000000
+      internalID: -4593439914605724579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_6
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 24
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad9809388eb37fe0800000000000000
+      internalID: -1192399984041353814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_7
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 24
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41930a32726a806f0800000000000000
+      internalID: -718141453533955820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_8
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 24
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a83ebbf6465b6130800000000000000
+      internalID: 3561034793237756071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 24
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac61e1b1850cdcd0800000000000000
+      internalID: -2532142835895800663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_10
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 23
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563b7898ee7ec6160800000000000000
+      internalID: 7020240930859365221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_11
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 23
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d17dfad740f5ca0800000000000000
+      internalID: -6026092838530900685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_12
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 23
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a436f75cb10b6110800000000000000
+      internalID: 1255098829594047653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_13
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 23
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a8306d2db136df0800000000000000
+      internalID: -188276167071790505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_14
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 23
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d1faa0bff0667b0800000000000000
+      internalID: -5231476346253795990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_15
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 23
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa11509b56c53fa0800000000000000
+      internalID: -5821528846740940120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_16
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 23
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1594789b0066da0800000000000000
+      internalID: -5952069060684852782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_17
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 23
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6e68d60f2c8c750800000000000000
+      internalID: 6325520014527358699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_18
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 22
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c482e01c987c71110800000000000000
+      internalID: 1231672417572497484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_19
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 22
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea551c8ae47899160800000000000000
+      internalID: 7032801065024181678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_20
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 22
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3d59bead902a500800000000000000
+      internalID: 405897752276751324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_21
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 22
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127e7e13c384de4e0800000000000000
+      internalID: -1950823640209037535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_22
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 22
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f71e38fe4dd62b0800000000000000
+      internalID: -5589577437322051729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_23
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 22
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a25b937cb27a42a0800000000000000
+      internalID: -6752458537569660248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_24
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 22
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3267c131c7db550c0800000000000000
+      internalID: -4587552304812755421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_25
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 23
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a94db2d180978d60800000000000000
+      internalID: 7892435759250885027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_26
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 22
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ae4011ea4063b00800000000000000
+      internalID: 807838328815938133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_27
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 23
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee5879e0781f1890800000000000000
+      internalID: -7485237182434091284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_28
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 23
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5950593fef2e9390800000000000000
+      internalID: -7809751999308605094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_29
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 23
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a510377af99eefe0800000000000000
+      internalID: -1157818753167125082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_30
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 23
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314e3136359456620800000000000000
+      internalID: 2766698168582398995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_31
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 23
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed141e37ae78b42d0800000000000000
+      internalID: -3293389261455146530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_32
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 24
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8b9391a88d82780800000000000000
+      internalID: -8707471791880554316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_33
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 23
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bdb486ebb0356fd0800000000000000
+      internalID: -2349418047019369035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_34
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 23
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf47dfb7a7c8b330800000000000000
+      internalID: 3726948214941110194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_35
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 23
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e600963054346d0800000000000000
+      internalID: -3007484245204505023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_36
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 23
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdfba47150d3a4ef0800000000000000
+      internalID: -123218947724361764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_37
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 23
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fe89a499c4378b0800000000000000
+      internalID: -5155692927143842039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_38
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 22
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37fcbca0b733d4390800000000000000
+      internalID: -7832547573372301453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_39
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 23
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010aebe3fe9da4ce0800000000000000
+      internalID: -1420083110908878832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_40
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 22
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6755214a0585b17e0800000000000000
+      internalID: -1793742923203717770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_41
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 22
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d3ac6c1aba325a0800000000000000
+      internalID: -6547200721953342090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_42
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 22
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cba947e40f2aa550800000000000000
+      internalID: 6172797937371425734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_43
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 22
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0bb1c99a0a952d10800000000000000
+      internalID: 2100254171558165259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_44
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 22
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25795c5a9623e3a0800000000000000
+      internalID: -6637418981397793492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_45
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 22
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ca8e440f73f5220800000000000000
+      internalID: 2476759825164840093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_46
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 22
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ebdf9360154a740800000000000000
+      internalID: 5162340160058015313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_47
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 23
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed8e1f1ad2544fa0800000000000000
+      internalID: -5817433721877393944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_48
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 23
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f0fdce7aa7804e0800000000000000
+      internalID: -2015225971596128468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_49
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 23
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc45e6bc1c1d0790800000000000000
+      internalID: -7562357289632052027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_50
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 23
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20d62101614a4130800000000000000
+      internalID: 3551723141022011436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_51
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 23
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80de958407669a980800000000000000
+      internalID: -8527171787013100280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_52
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 23
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880ffc11016b207f0800000000000000
+      internalID: -647755216253357944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_53
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 23
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77340d900149ec670800000000000000
+      internalID: 8560942738282922871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_54
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 23
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12568f2a1bf43d050800000000000000
+      internalID: 5824086367482176801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_55
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 24
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5a3c09a2c6a55f0800000000000000
+      internalID: -767181856440080935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_56
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 24
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e6f2ef9ea6719c0800000000000000
+      internalID: -3956576194397245877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_57
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 24
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2febf933035270540800000000000000
+      internalID: 4973985202408767218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_58
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 24
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663f65fabeeac5ae0800000000000000
+      internalID: -1559179043694775450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_59
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 25
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e088f14c719660870800000000000000
+      internalID: 8648715685207181326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_60
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 25
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6c3ff96989df740800000000000000
+      internalID: 5187470118496749263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_61
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 25
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4082b630fcea44030800000000000000
+      internalID: 3478097016375683076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_62
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 25
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a57c807afd16060800000000000000
+      internalID: 6945078008881830413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EraserPickup_63
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 25
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bab9d765558a4590800000000000000
+      internalID: -7689186811920663882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
