@@ -2,14 +2,12 @@ using System.Net.Mime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NextLevel : MonoBehaviour, IInteractable
 {
     GameManager gameManager;
-    public Text interactText;
-    public ScriptableInt levelIndex;
+    public GameObject interactText;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +23,7 @@ public class NextLevel : MonoBehaviour, IInteractable
     {
         if (other.tag == "Player")
         {
-            interactText.enabled = true;
+            interactText.SetActive(true);
         }
     }
 
@@ -33,7 +31,7 @@ public class NextLevel : MonoBehaviour, IInteractable
     {
         if (other.tag == "Player")
         {
-            interactText.enabled = false;
+            interactText.SetActive(false);
         }
     }
 
@@ -45,7 +43,7 @@ public class NextLevel : MonoBehaviour, IInteractable
     public void Interact(GameObject owner, GameObject interactable)
     {
         if(owner.GetComponent<PencilLeadStat>().StatValue>0&&owner.GetComponent<PencilEraserStat>().StatValue>0){
-            SceneManager.LoadScene(levelIndex.value);
+            gameManager.LoadNextLevel();
         }
     }
 }
