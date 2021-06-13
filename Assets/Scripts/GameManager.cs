@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
         levelIndex.value++;
         if (levelIndex.value >= MaxLevelIndex.value)
         {
-            SceneManager.LoadScene("GameCompleted");
+            SceneManager.LoadScene("GameComplete");
         }
     }
 }

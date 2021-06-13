@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class NextLevel : MonoBehaviour, IInteractable
 {
     GameManager gameManager;
+    bool inRange = false;
     public GameObject interactText;
 
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class NextLevel : MonoBehaviour, IInteractable
         if (other.tag == "Player")
         {
             interactText.SetActive(true);
+            inRange = true;
         }
     }
 
@@ -32,6 +34,7 @@ public class NextLevel : MonoBehaviour, IInteractable
         if (other.tag == "Player")
         {
             interactText.SetActive(false);
+            inRange=false;
         }
     }
 
@@ -42,7 +45,7 @@ public class NextLevel : MonoBehaviour, IInteractable
 
     public void Interact(GameObject owner, GameObject interactable)
     {
-        if(owner.GetComponent<PencilLeadStat>().StatValue>0&&owner.GetComponent<PencilEraserStat>().StatValue>0){
+        if(owner.GetComponent<PencilLeadStat>().StatValue>0&&owner.GetComponent<PencilEraserStat>().StatValue>0&&Input.GetKey(KeyCode.E)){
             gameManager.LoadNextLevel();
         }
     }

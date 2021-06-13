@@ -49,44 +49,57 @@ public class PencilModel : MonoBehaviour
 
     public void UpdateModel()
     {
-        for (int i = 0; i < pencilStates.Length; i++)
-        {
-            var bodyType = pencilStates[i];
+        // for (int i = 0; i < pencilStates.Length; i++)
+        // {
+        //     var bodyType = pencilStates[i];
 
-            bool hasLead = pencilLead.StatValue > 0;
-            bool hasEraser = pencilEraser.StatValue > 0;
+        //     bool hasLead = pencilLead.StatValue > 0;
+        //     bool hasEraser = pencilEraser.StatValue > 0;
 
-            if (hasLead && !bodyType.hasLead)
-                continue;
+            // if (hasLead && !bodyType.hasLead)
+            //     continue;
 
-            if (hasEraser && !bodyType.hasEraser)
-                continue;
+            // if (hasEraser && !bodyType.hasEraser)
+            //     continue;
 
 
-            if (!state.hasEraser && bodyType.hasEraser)
-            {
-                Debug.Log("A");
-                pencilEraser.ResetValue();
+            // if (!state.hasEraser && bodyType.hasEraser)
+            // {
+            //     Debug.Log("A");
+            //     pencilEraser.ResetValue();
+            // }
+            // else if (!state.hasLead && bodyType.hasLead)
+            // {
+            //     Debug.Log("B");
+            //     pencilLead.ResetValue();
+            // }
+            // else if (state.hasLead && !bodyType.hasLead)
+            // {
+            //     Debug.Log("c");
+            //     pencilLead.SetValue(0, false);
+            // }
+            // else if (state.hasEraser && !bodyType.hasEraser)
+            // {
+            //     Debug.Log("D");
+            //     pencilEraser.SetValue(0, false);
+            // }
+
+
+
+        //     UpdateState(i);
+
+        //     break;
+        // }
+            if(pencilEraser.StatValue<=0&&pencilLead.StatValue<=0){
+                UpdateState(0);
+            }else if(pencilEraser.StatValue>0&&pencilLead.StatValue<=0){
+                UpdateState(2);
+            }else if(pencilEraser.StatValue<=0&&pencilLead.StatValue>0){
+                UpdateState(1);
+            }else if(pencilEraser.StatValue>0&&pencilLead.StatValue>0){
+                UpdateState(3);
+            }else{
+                //no need to update if he is complete
             }
-            else if (!state.hasLead && bodyType.hasLead)
-            {
-                Debug.Log("B");
-                pencilLead.ResetValue();
-            }
-            else if (state.hasLead && !bodyType.hasLead)
-            {
-                Debug.Log("c");
-                pencilLead.SetValue(0, false);
-            }
-            else if (state.hasEraser && !bodyType.hasEraser)
-            {
-                Debug.Log("D");
-                pencilEraser.SetValue(0, false);
-            }
-
-            UpdateState(i);
-
-            break;
-        }
     }
 }
