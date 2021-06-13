@@ -7,17 +7,22 @@ public class PlayerMovement : MonoBehaviour
 {
     [NonSerialized]
     public Player player;
-
+    public Rigidbody2D rb;
     public float moveSpeed = 2.5f;
+    [Range(1, 10)]
+    public float jumpVelocity;
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
 
     Animator animator;
     Vector2 moveDirection = Vector2.down;
     bool isMoving;
-
+    private bool isGrounded = true;
     void Start()
     {
         animator = GetComponent<Animator>();
         player = GetComponent<Player>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -40,7 +45,21 @@ public class PlayerMovement : MonoBehaviour
         {
             Move(Vector2.right);
         }
-
+        if (isGrounded)
+        {
+            if (Input.GetButtonDown("Jump"))
+            {
+                rb.velocity = Vector2.up * jumpVelocity;
+            }
+        }
+        if (rb.velocity.y < 0)
+        {
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
+        else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
+        {
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
         UpdateAnimation();
     }
 
