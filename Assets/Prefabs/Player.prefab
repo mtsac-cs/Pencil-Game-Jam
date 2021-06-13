@@ -268,9 +268,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e476c69d943d0f942a18755e79737f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyInfo: {fileID: 11400000, guid: ea41861dd07ea5d47be17aed3d6fe2da, type: 2}
-  bodyTypes:
+  pencilStates:
   - {fileID: 11400000, guid: ea41861dd07ea5d47be17aed3d6fe2da, type: 2}
   - {fileID: 11400000, guid: 218904e59fc7a514e8a01fba2796225d, type: 2}
   - {fileID: 11400000, guid: 3c3eb4d11b08b2143b6f368ec7e63c33, type: 2}
   - {fileID: 11400000, guid: 69b41a5dda1e8314abe3045044f1544b, type: 2}
+  state: {fileID: 11400000, guid: ea41861dd07ea5d47be17aed3d6fe2da, type: 2}

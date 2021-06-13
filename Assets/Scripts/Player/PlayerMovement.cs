@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveDirection = Vector2.down;
     bool isMoving;
     private bool isGrounded = true;
+    bool isDoubleJumping;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -45,13 +47,22 @@ public class PlayerMovement : MonoBehaviour
         {
             Move(Vector2.right);
         }
-        if (isGrounded)
+
+        if (Input.GetButtonDown("Jump"))
         {
-            if (Input.GetButtonDown("Jump"))
+            if (isGrounded)
             {
+                isGrounded = false;
                 rb.velocity = Vector2.up * jumpVelocity;
             }
+            else if (!isDoubleJumping && CanDoubleJump(out var eraserStat))
+            {
+                eraserStat.UseAbility();
+                rb.velocity = Vector2.up * jumpVelocity;
+                isDoubleJumping = true;
+            }
         }
+
         if (rb.velocity.y < 0)
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
@@ -76,5 +87,20 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("horizontalDirection", moveDirection.x);
         animator.SetFloat("verticalDirection", moveDirection.y);
+    }
+
+    bool CanDoubleJump(out PencilEraserStat eraserStat)
+    {
+        eraserStat = player.GetComponent<PencilEraserStat>();
+        return eraserStat.CanUseAbility();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Floor")
+        {
+            isGrounded = true;
+            isDoubleJumping = false;
+        }
     }
 }
