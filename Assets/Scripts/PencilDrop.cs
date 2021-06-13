@@ -5,14 +5,17 @@ public class PencilDrop : ItemDrop
 {
     public PencilState partInfo;
 
-
     public override void Interact(GameObject owner, GameObject interactable)
     {
         var player = owner.GetComponent<Player>();
 
         if (partInfo.bodyTypeID >= 0 && partInfo.bodyTypeID <= 3)
         {
-            player.pencilModel.UpdateState(partInfo.bodyTypeID);
+            //player.pencilModel.UpdateState(partInfo.bodyTypeID);
+            
+            player.pencilModel.state = partInfo;
+            player.pencilModel.UpdateModel();
+
             GameObject.Destroy(interactable);
         }
         else

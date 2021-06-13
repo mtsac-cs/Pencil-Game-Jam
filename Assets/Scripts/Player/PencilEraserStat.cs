@@ -1,3 +1,5 @@
+using System;
+
 public class PencilEraserStat : PencilBaseStat
 {
     private void Start()

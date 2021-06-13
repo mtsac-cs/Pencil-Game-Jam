@@ -5,66 +5,88 @@ using UnityEngine;
 public class PencilModel : MonoBehaviour
 {
     public PencilState CurrentState { get; private set; }
-    public PencilState[] bodyTypes;
-    public PencilState bodyInfo;
+    public PencilState[] pencilStates;
+    public PencilState state;
 
-    Animator animator; 
+    Animator animator;
+    PencilEraserStat pencilEraser;
+    PencilLeadStat pencilLead;
 
     void Start()
     {
-        if (bodyInfo == null)
+        if (state == null)
         {
-            throw new Exception(nameof(bodyInfo) + " in player is null please drag in a base body type from Scriptable Objects");
+            throw new Exception(nameof(state) + " in player is null please drag in a base body type from Scriptable Objects");
         }
 
         animator = GetComponent<Animator>();
         gameObject.AddComponent<InteractionObserver>();
-        gameObject.AddComponent<PencilLeadStat>();
-        gameObject.AddComponent<PencilEraserStat>();
+        pencilLead = gameObject.AddComponent<PencilLeadStat>();
+        pencilEraser = gameObject.AddComponent<PencilEraserStat>();
     }
 
-    public void UpdateState(int id)
+    private void UpdateState(int id)
     {
-        if (id > bodyTypes.Length)
+        if (id > pencilStates.Length)
         {
             Debug.LogError("id is out of range (body type you are trying to access does not exist");
             return;
         }
 
-        UpdateState(bodyTypes[id]);
+        UpdateState(pencilStates[id]);
     }
 
-    public void UpdateState(PencilState state)
+    private void UpdateState(PencilState state)
     {
-        bodyInfo = state;
-        animator.SetInteger("BodyType ID", bodyInfo.bodyTypeID);
+        this.state = state;
+        animator.SetInteger("BodyType ID", this.state.bodyTypeID);
     }
 
-    public bool HasEraser() => bodyInfo.hasEraser;
+    public bool HasEraser() => state.hasEraser;
 
-    public bool HasLead() => bodyInfo.hasLead;
+    public bool HasLead() => state.hasLead;
+
 
     public void UpdateModel()
     {
-        bool removeLead = GetComponent<PencilLeadStat>().StatValue == 0;
-        bool removeEraser = GetComponent<PencilEraserStat>().StatValue == 0;
-
-        for (int i = 0; i < bodyTypes.Length; i++)
+        for (int i = 0; i < pencilStates.Length; i++)
         {
-            if (i == 0)
+            var bodyType = pencilStates[i];
+
+            bool hasLead = pencilLead.StatValue > 0;
+            bool hasEraser = pencilEraser.StatValue > 0;
+
+            if (hasLead && !bodyType.hasLead)
+                continue;
+
+            if (hasEraser && !bodyType.hasEraser)
+                continue;
+
+
+            if (!state.hasEraser && bodyType.hasEraser)
             {
-                UpdateState(i);
-                break;
+                Debug.Log("A");
+                pencilEraser.ResetValue();
+            }
+            else if (!state.hasLead && bodyType.hasLead)
+            {
+                Debug.Log("B");
+                pencilLead.ResetValue();
+            }
+            else if (state.hasLead && !bodyType.hasLead)
+            {
+                Debug.Log("c");
+                pencilLead.SetValue(0, false);
+            }
+            else if (state.hasEraser && !bodyType.hasEraser)
+            {
+                Debug.Log("D");
+                pencilEraser.SetValue(0, false);
             }
 
-            var bodyType = bodyTypes[i];
-            if (bodyType.hasEraser && removeEraser)
-                continue;
-
-            if (bodyType.hasLead && removeLead)
-                continue;
-
             UpdateState(i);
+
+            break;
         }
     }
 }
