@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using UnityEngine;
 
 public class PencilModel : MonoBehaviour
@@ -17,12 +18,12 @@ public class PencilModel : MonoBehaviour
         }
 
         animator = GetComponent<Animator>();
-        gameObject.AddComponent<ItemDropObserver>();
+        gameObject.AddComponent<InteractionObserver>();
         gameObject.AddComponent<PencilLeadStat>();
         gameObject.AddComponent<PencilEraserStat>();
     }
 
-    public void UpdatePart(int id)
+    public void UpdateState(int id)
     {
         if (id > bodyTypes.Length)
         {
@@ -30,7 +31,40 @@ public class PencilModel : MonoBehaviour
             return;
         }
 
-        bodyInfo = bodyTypes[id];
+        UpdateState(bodyTypes[id]);
+    }
+
+    public void UpdateState(PencilState state)
+    {
+        bodyInfo = state;
         animator.SetInteger("BodyType ID", bodyInfo.bodyTypeID);
+    }
+
+    public bool HasEraser() => bodyInfo.hasEraser;
+
+    public bool HasLead() => bodyInfo.hasLead;
+
+    public void UpdateModel()
+    {
+        bool removeLead = GetComponent<PencilLeadStat>().StatValue == 0;
+        bool removeEraser = GetComponent<PencilEraserStat>().StatValue == 0;
+
+        for (int i = 0; i < bodyTypes.Length; i++)
+        {
+            if (i == 0)
+            {
+                UpdateState(i);
+                break;
+            }
+
+            var bodyType = bodyTypes[i];
+            if (bodyType.hasEraser && removeEraser)
+                continue;
+
+            if (bodyType.hasLead && removeLead)
+                continue;
+
+            UpdateState(i);
+        }
     }
 }

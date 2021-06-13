@@ -5,13 +5,20 @@ public class PencilBaseStat : MonoBehaviour, IPencilAbility
 {
     public string StatName { get; protected set; }
     public int StatValue { get; protected set; }
+    protected PencilModel pencilModel;
     protected Text statTextUI;
+
+    void Start()
+    {
+        
+    }
 
     public void Init(string statName, Text uiText, int statValue = 3)
     {
         this.StatName = statName;
-        this.StatValue = statValue;
+        SetValue(statValue);
         this.statTextUI = uiText;
+        pencilModel = GetComponent<PencilModel>();
     }
 
     public virtual void DecreaseValue(int amount) => SetValue(StatValue - amount);
@@ -33,6 +40,7 @@ public class PencilBaseStat : MonoBehaviour, IPencilAbility
     public virtual void OnStatDepleated()
     {
         StatValue = 0;
+        pencilModel.UpdateModel();
     }
 
     public virtual void UseAbility()

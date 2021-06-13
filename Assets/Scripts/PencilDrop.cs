@@ -12,7 +12,7 @@ public class PencilDrop : ItemDrop
 
         if (partInfo.bodyTypeID >= 0 && partInfo.bodyTypeID <= 3)
         {
-            player.pencilModel.UpdatePart(partInfo.bodyTypeID);
+            player.pencilModel.UpdateState(partInfo.bodyTypeID);
             GameObject.Destroy(interactable);
         }
         else
