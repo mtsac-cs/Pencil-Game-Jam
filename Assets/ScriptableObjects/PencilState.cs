@@ -6,6 +6,6 @@ using UnityEngine;
 public class PencilState : ScriptableObject
 {
     public int bodyTypeID;
-    public bool hasEraser;
-    public bool hasLead;
+    public bool hasEraserModel;
+    public bool hasLeadModel;
 }

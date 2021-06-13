@@ -10,7 +10,7 @@ public class PencilEraserStat : PencilBaseStat
 
     public override bool CanUseAbility()
     {
-        return pencilModel.HasEraser() ? base.CanUseAbility() : false;
+        return pencilModel.HasEraserModel() ? base.CanUseAbility() : false;
     }
 
     public override void UseAbility()
