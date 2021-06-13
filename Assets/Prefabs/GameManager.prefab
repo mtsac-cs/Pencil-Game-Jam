@@ -43,5 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 702f21c537d343143ba494363bbad4a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: {fileID: 11400000, guid: 5a060388553f5264d9727c562315000b, type: 2}
+  LevelIndex: {fileID: 11400000, guid: 5a060388553f5264d9727c562315000b, type: 2}
   MaxLevelIndex: {fileID: 11400000, guid: 41501a82c24042a49a89319a7e884983, type: 2}

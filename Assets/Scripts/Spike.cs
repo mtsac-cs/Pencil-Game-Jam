@@ -5,6 +5,8 @@ using UnityEngine;
 public class Spike : MonoBehaviour
 {
     // Start is called before the first frame update
+    float cooldown = 2f;
+    float time=0;
     GameManager gameManager;
     void Start()
     {
@@ -23,7 +25,10 @@ public class Spike : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag=="Player"){
-            gameManager.RestartLevel();
+            if(Time.time-time>cooldown){
+                time = Time.time;
+                gameManager.RestartLevel();
+            }
         }
     }
 }

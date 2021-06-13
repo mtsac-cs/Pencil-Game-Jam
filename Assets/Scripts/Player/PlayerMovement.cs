@@ -5,6 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(Animator), typeof(Player))]
 public class PlayerMovement : MonoBehaviour
 {
+    public GameObject jumpSound;
+    public GameObject jumpParticle;
+    public GameObject doubleJumpParticle;
     [NonSerialized]
     public Player player;
     public Rigidbody2D rb;
@@ -33,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            Move(Vector2.up);
+            //Move(Vector2.up);
         }
         else if (Input.GetKey(KeyCode.A))
         {
@@ -41,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            Move(Vector2.down);
+            //Move(Vector2.down);
         }
         else if (Input.GetKey(KeyCode.D))
         {
@@ -54,9 +57,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 isGrounded = false;
                 rb.velocity = Vector2.up * jumpVelocity;
+                jumpSound.GetComponent<AudioSource>().Play();
+                jumpParticle.GetComponent<ParticleSystem>().Play();
             }
             else if (!isDoubleJumping && CanDoubleJump(out var eraserStat))
             {
+                jumpSound.GetComponent<AudioSource>().Play();
+                doubleJumpParticle.GetComponent<ParticleSystem>().Play();
                 eraserStat.UseAbility();
                 rb.velocity = Vector2.up * jumpVelocity;
                 isDoubleJumping = true;

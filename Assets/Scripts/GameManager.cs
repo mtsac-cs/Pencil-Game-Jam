@@ -4,31 +4,34 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    public ScriptableInt levelIndex;
+    public ScriptableInt LevelIndex;
     public ScriptableInt MaxLevelIndex;
     // Start is called before the first frame update
     void Start()
     {
-        levelIndex.value++;
+        LevelIndex.value++;
+        if(LevelIndex.value>=MaxLevelIndex.value){
+            LevelIndex.value=2;
+        }
     }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.R)){
-            levelIndex.value--;
             RestartLevel();
         } 
     }
     public void RestartLevel()
     {
-        SceneManager.LoadScene(levelIndex.value);
+        LevelIndex.value--;
+        SceneManager.LoadScene(LevelIndex.value);
     }
     public void LoadNextLevel()
     {
-        if (levelIndex.value > MaxLevelIndex.value)
+        if (LevelIndex.value > MaxLevelIndex.value)
         {
             SceneManager.LoadScene("GameComplete");
         }else{
-            SceneManager.LoadScene(levelIndex.value);
+            SceneManager.LoadScene(LevelIndex.value);
         }
     }
 }
