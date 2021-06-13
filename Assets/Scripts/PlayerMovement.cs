@@ -1,15 +1,14 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator), typeof(BodyType))]
+[RequireComponent(typeof(Animator), typeof(Player))]
 public class PlayerMovement : MonoBehaviour
 {
     [NonSerialized]
-    public BodyType body;
+    public Player player;
 
-    public float moveSpeed = 5;    
+    public float moveSpeed = 2.5f;
 
     Animator animator;
     Vector2 moveDirection = Vector2.down;
@@ -18,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        body = GetComponent<BodyType>();
+        player = GetComponent<Player>();
     }
 
     void Update()
@@ -59,9 +58,9 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("horizontalDirection", moveDirection.x);
         animator.SetFloat("verticalDirection", moveDirection.y);
 
-        if (animator.GetInteger("BodyType ID") != body.bodyId)
+        if (animator.GetInteger("BodyType ID") != player.bodyInfo.bodyTypeID)
         {
-            animator.SetInteger("BodyType ID", body.bodyId);
+            animator.SetInteger("BodyType ID", player.bodyInfo.bodyTypeID);
         }
     }
 }

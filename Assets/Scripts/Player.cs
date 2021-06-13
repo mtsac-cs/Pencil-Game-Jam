@@ -1,23 +1,28 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(PlayerMovement))]
+[RequireComponent(typeof(PlayerMovement), typeof(PencilPartInfo))]
 public class Player : MonoBehaviour
 {
+    public static readonly string playerTag = "Player";
+
+    public bool InteractKeyDown { get; private set; }
+
     [NonSerialized]
     public PlayerMovement movement;
 
-    // Start is called before the first frame update
+    public PencilPartInfo bodyInfo;
+
     void Start()
     {
-        
+        if (!bodyInfo)
+        {
+            bodyInfo = GetComponent<PencilPartInfo>();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        InteractKeyDown = Input.GetKey(KeyCode.E);
     }
 }
