@@ -20,6 +20,10 @@ public class PencilBaseStat : MonoBehaviour, IPencilAbility
     public virtual void SetValue(int count)
     {
         StatValue = count;
+
+        if (statTextUI)
+            statTextUI.text = "X" + StatValue.ToString();
+
         if (count <= 0)
         {
             OnStatDepleated();
@@ -28,10 +32,7 @@ public class PencilBaseStat : MonoBehaviour, IPencilAbility
 
     public virtual void OnStatDepleated()
     {
-        if (statTextUI)
-        {
-            statTextUI.text = StatValue.ToString();
-        }
+        StatValue = 0;
     }
 
     public virtual void UseAbility()
